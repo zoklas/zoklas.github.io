@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de metadatos y enlaces a hojas de estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Estilos adicionales y enlace a la fuente de Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
+    </style>
+    <title>Interfaz de Juegos</title>
+    <!-- Estilos para el cuerpo del documento -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-image: url('mondo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            overflow-y: auto; /* Añadido para que la barra de desplazamiento aparezca en el cuerpo */
+        }
+
+        /* Estilos para la cabecera */
+        header {
+            background-image: url('franja.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 55px;
+            position: relative;
+        }
+
+        /* Estilos para el botón de login */
+        .login-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: rgb(0, 183, 255); 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: absolute;
+            top: 40px; /* Ajuste aquí para bajar el botón */
+            right: 20px;
+        }
+
+        /* Estilos para los elementos del menú de juegos */
+        .juego-menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Estilos para los ítems del menú y submenús */
+        .menu-item {
+            display: flex;
+            margin: 10px;
+            position: relative;
+        }
+
+        /* Estilos para el eslogan */
+        .eslogan {
+            margin-top: 150px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Estilos para las imágenes */
+        .image-container {
+            text-align: center; /* Centra las imágenes horizontalmente */
+        }
+
+        .medium-image {
+            display: block; /* Asegura que las imágenes estén una encima de la otra */
+            max-width: 50%; /* Define el ancho máximo de las imágenes para hacerlas más pequeñas */
+            margin: 0 auto 10px; /* Centra las imágenes horizontalmente y agrega un margen inferior */
+        }
+    </style>
+</head>
+<body class="scrollable-body">
+    <!-- Cabecera con botón de login y logo -->
+    <header>
+        <a href="login.html" class="login-link">
+            <button class="login-button">Login</button>
+        </a>
+        <img src="magia.png" alt="Logo" id="logo">
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Contenedor de los elementos del menú y del eslogan -->
+        <div id="juegos-container">
+            <!-- Menú de juegos con sus respectivos submenús -->
+            <ul class="juego-menu">
+                <!-- Ítem del menú "Inicio" -->
+                <li class="menu-item">
+                    <a href="magic.html" target="_blank"></a>
+                    <span class="menu-title">Inicio</span>
+                </li>
+                <!-- Ítem del menú "Lenguaje" con submenú -->
+                <li class="menu-item">
+                    <span class="menu-title">Lenguaje</span>
+                    <ul class="submenu">
+                        <li>Abecedario</li>
+                    </ul>
+                </li>
+                <!-- Ítem del menú "Pensamiento Lógico-Matemático" con submenú -->
+                <li class="menu-item">
+                    <span class="menu-title">Pensamiento Lógico-Matemático</span>
+                    <ul class="submenu">
+                        <li>Números</li>
+                        <li>Operaciones</li>
+                    </ul>
+                </li>
+                <!-- Otros ítems del menú con sus respectivos submenús -->
+                <!-- ... -->
+            </ul>
+
+            <!-- Eslogan de la página -->
+            <p class="eslogan">
+                ¡Descubre el hechizo de aprender con MagicMin Academy!
+                Donde cada juego es una llave mágica para desbloquear las competencias de lectura y escritura en los más pequeños.
+                Nuestros juegos didácticos convierten cada desafío en una oportunidad para crecer. ¡Magia, diversión y aprendizaje en un solo lugar!
+            </p>
+
+            <!-- GIF animado -->
+            <img src="https://i.gifer.com/origin/95/9592fe08911171b05f3c6aac39d0df83_w200.gif" alt="GIF Bangida" style="max-width: 100%;">
+        </div>
+
+        <!-- Contenedor de las imágenes adicionales -->
+        <div class="image-container">
+            <img src="imagen1.png" alt="Imagen 1" class="medium-image">
+            <img src="imagen2.png" alt="Imagen 2" class="medium-image">
+        </div>
+    </main>
+</body>
+</html>
+
+

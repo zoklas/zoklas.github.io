@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración de metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicMind Academy</title>
+    <!-- Estilos CSS para la página -->
+    <style>
+        /* Estilos para el cuerpo de la página */
+        body {
+            background-image: url('mario.avif');
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+        }
+
+        /* Contenedor principal de la página */
+        .container {
+            text-align: center;
+            position: relative;
+            margin-top: 370px; /* Ajusta el margen superior según tus necesidades */
+        }
+
+        /* Estilos para las imágenes de maestros, alumnos y la imagen superior */
+        .maestros-img,
+        .alumnos-img,
+        .imagen-superior {
+            position: absolute;
+            z-index: 1;
+        }
+
+        /* Estilos específicos para la imagen de maestros */
+        .maestros-img {
+            top: -50px; /* Ajusta la posición vertical de la imagen de maestros */
+            left: 30%; /* Ajusta la posición lateral de la imagen de maestros */
+            transform: translateX(-50%);
+            width: 200px; /* Ajusta el ancho de la imagen de maestros */
+        }
+
+        /* Estilos específicos para la imagen de alumnos */
+        .alumnos-img {
+            top: -50px; 
+            left: 45%; 
+            transform: translateX(-50%);
+            opacity: 1;
+            width: 200px; 
+        }
+
+        /* Estilos específicos para la imagen superior */
+        .imagen-superior {
+            top: -300px; 
+            left: 35%; 
+            transform: translateX(-50%);
+            width: 400px; 
+        }
+
+        /* Estilos para los botones */
+        .boton {
+            padding: 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            margin-top: 20px; 
+            position: relative;
+            left: -300px; 
+            z-index: 0;
+        }
+
+        /* Estilos para la animación de flotación de la imagen dentro del botón */
+        .boton img {
+            position: absolute;
+            animation: floatAnimation 3s infinite ease-in-out;
+            width: 180px;
+        }
+
+        /* Definición de la animación de flotación */
+        @keyframes floatAnimation {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-90px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Imagen de maestros -->
+        <img src="maestros.png" alt="texto" class="maestros-img">
+        <!-- Imagen de alumnos -->
+        <img src="ALUMNOS.png" alt="texto" class="alumnos-img">
+        <!-- Imagen superior -->
+        <img src="magia.png" alt="Imagen superior" class="imagen-superior">
+        <!-- Botón 1 con enlace a página de registro -->
+        <button class="boton">
+            <a href="registro.html">
+                <img src="caja.png" alt="Botón 1">
+            </a>
+        </button>
+        <!-- Botón 2 con enlace a página de inicio de sesión para maestros -->
+        <button class="boton">
+            <a href="LoginMaster.html">
+                <img src="caja.png" alt="Botón 2">
+            </a>
+        </button>
+    </div>
+</body>
+
+</html>

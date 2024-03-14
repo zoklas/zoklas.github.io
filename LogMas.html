@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Registro</title>
+</head>
+<body>
+
+   
+    <form action="procesar_login.php" method="POST">
+        <h2>Registro</h2>
+      <div>
+        <label for="id_maestro">ID del alumno:</label>
+        <input type="text" id="id_maestro" name="id_maestro" required>
+      </div>
+      <div>
+        <label for="nom_maestro">Nombre del alumno:</label>
+        <input type="text" id="nom_maestro" name="nom_maestro" required>
+      </div>
+      <div>
+        <label for="nom_maestro">Nombre del padre:</label>
+        <input type="text" id="nom_padre" name="nom_padre" required>
+      </div>
+      
+      <div>
+        <label for="id_escuela">ID de la Escuela:</label>
+        <input type="text" id="id_escuela" name="id_escuela" required>
+      </div>
+      <div>
+        <label for="id_grupo">ID del Grupo:</label>
+        <input type="text" id="id_grupo" name="id_grupo" required>
+      </div>
+      <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

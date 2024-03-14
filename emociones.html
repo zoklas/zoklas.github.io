@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="section1">
+        <h1>JUEGO  DE MEMORIA </h1>
+        <table>
+            <tr>
+                <td><button id="0" onclick="destapar(0)"></button></td>
+                <td><button id="1" onclick="destapar(1)"></button></td>
+                <td><button id="2" onclick="destapar(2)"></button></td>
+                <td><button id="3" onclick="destapar(3)"></button></td>
+            </tr>
+            <tr>
+                <td><button id="4" onclick="destapar(4)"></button></td>
+                <td><button id="5" onclick="destapar(5)"></button></td>
+                <td><button id="6" onclick="destapar(6)"></button></td>
+                <td><button id="7" onclick="destapar(7)"></button></td>
+            </tr>
+            <tr>
+                <td><button id="8" onclick="destapar(8)"></button></td>
+                <td><button id="9" onclick="destapar(9)"></button></td>
+                <td><button id="10"onclick="destapar(10)"></button></td>
+                <td><button id="11" onclick="destapar(11)"></button></td>
+            </tr>
+            <tr>
+                <td><button id="12" onclick="destapar(12)"></button></td>
+                <td><button id="13" onclick="destapar(13)"></button></td>
+                <td><button id="14" onclick="destapar(14)"></button></td>
+                <td><button id="15" onclick="destapar(15)"></button></td>
+            </tr>
+        </table>
+    
+    
+    </section>
+    <section class="section2">
+        <h2 id="aciertos" class="estadisticas">Aciertos:0</h2>
+        <h2 id="t-restante"class="estadisticas">Tiempo:30 segundos </h2>
+        <h2 id="movimiento"class="estadisticas">Movimientos:0</h2>
+    </section>
+    </main>
+<footer>
+    <p>juego programdo por Andrea </p>
+</footer>
+</body>
+</html>
+<!---Diseño del memorama de las emociones-->
+<style>
+body{
+    background: rgb(205,21,218);
+    background: linear-gradient(90deg, rgba(205,21,218,1) 0%, rgba(139,4,221,1) 35%, rgba(0,212,255,1) 100%);
+    font-family: sans-serif;
+    color:white;
+}
+main{
+        width: 730px;
+        margin:100px auto 50px;
+        display:flex;
+        align-items:center;
+
+
+    }
+ .section1{
+    background-color:rgba(225,255,255,0.2) ;
+    padding: 0 10px 10px 10px;
+    border-radius: 8 px;
+ } 
+ h1{
+    text-align: center;
+ }  
+ button{
+    height: 100px;
+    width: 100px;
+    font-size: 40px;
+    color:black;
+    font-weight: bold;
+
+ }
+button:hover{
+    cursor:pointer;
+}
+.section2 {
+    
+    background-color:rgba(225,255,255,0.2) ;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius:8 px ;
+    width:250px;
+    height: 400px;
+    padding: 0 20 px;
+}
+.estadisticas{
+    border:1px solid white;
+    height:105;
+    border-radius:8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+
+
+}
+footer{
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+}
+</style>
+<script>
+
+
+</script>
